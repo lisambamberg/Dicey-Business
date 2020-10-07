@@ -6,14 +6,15 @@ class Die {
     constructor(value) {
         this.value = value;
         this.div = document.createElement("div");
-        this.div.className = "box";
+        this.div.className = "die";
         squareContainer.appendChild(this.div);
-        console.log(this);
+        console.log(this)
+        this.roll();
     }
 
     roll() {
-        (Math.floor(Math.random() * 6) + 1);
-       
+        let num = (Math.floor(Math.random() * 6) + 1);
+        this.div.innerHTML = num;
     }
 }
 

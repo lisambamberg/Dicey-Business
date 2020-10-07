@@ -29,11 +29,12 @@
     cursor: pointer;
 }
 
-.box {
+.die {
     width: 100px;
     height: 100px;
     margin: 5px;
-    background-color: black;
+    background-color: white;
+    border: 5px solid black;
     justify-content: center;
     align-items: center;
     display: flex;
